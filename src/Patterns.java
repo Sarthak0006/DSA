@@ -17,12 +17,12 @@ public class Patterns {
         }
     }
 
-     public static void Pattern2(int a){
+    public static void Pattern2(int a){
         /* *
            **
            ***
            **** */
-        for ( int i = 0; i < a; i++) {
+        for ( int i = 0; i <= a; i++) {
             for ( int j = 0; j < i; j++) {
                 System.out.print("*");
             }
@@ -30,33 +30,33 @@ public class Patterns {
         }
     }
 
-     public static void Pattern3(int a){
+    public static void Pattern3(int a){
         /* 1
            12
            123
            1234 */
-        for ( int i = 0; i < a; i++) {
-            for ( int j = 0; j < a; j++) {
+        for ( int i = 0; i <= a; i++) {
+            for ( int j = 0; j < i; j++) {
                 System.out.print(j+1);
             }
             System.out.print("\n");
         }
     }
 
-      public static void Pattern4(int a){
+    public static void Pattern4(int a){
         /* 1
            22
            333
            4444 */
-        for ( int i = 0; i < a; i++) {
-            for ( int j = 0; j < a; j++) {
-                System.out.print(i+1);
+        for ( int i = 0; i <= a; i++) {
+            for ( int j = 0; j < i; j++) {
+                System.out.print(i);
             }
             System.out.print("\n");
         }
     }
 
-      public static void Pattern5(int a){
+    public static void Pattern5(int a){
         /* ****
            ***
            **
@@ -69,7 +69,7 @@ public class Patterns {
         }
     }
 
-      public static void Pattern6(int a){
+    public static void Pattern6(int a){
         /* 1234
            123
            12
@@ -82,7 +82,7 @@ public class Patterns {
         }
     }
      
-      public static void Pattern6(int a){
+    public static void Pattern7(int a){
         /* ****
            ****
            ****
