@@ -189,15 +189,22 @@ public class Patterns {
              123   321
              123443321 */
           
-        int b = 1;
-        for ( int i = 0; i < a; i++) {
+      for ( int i = 0; i < a; i++) {
+          int b = 1;
+          for ( int j = 0; j <= i; j++) {
+              System.out.print(b);
+              b = b + 1;
+          }
+          for ( int k = 2*(a-i) - 2; k > 0; k--) {
+              System.out.print(" ");
+          }
+          int c = i + 1;
             for ( int j = 0; j <= i; j++) {
-                System.out.print(b);
-                int c = b-1;
-                b = Math.abs(c);
+                System.out.print(c);
+                c = c - 1;
             }
-            System.out.print("\n");
-        }
+          System.out.print("\n");
+      }
     }
 }
 
