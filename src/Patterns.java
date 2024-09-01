@@ -83,13 +83,118 @@ public class Patterns {
     }
      
     public static void Pattern7(int a){
-        /* ****
-           ****
-           ****
-           **** */
+        /*    *
+             ***
+            *****
+           *******  */
         for ( int i = 0; i < a; i++) {
-            for ( int j = 0; j < a; j++) {
+            for ( int j = 0; j < a-i-1; j++) {
+                System.out.print(" ");
+            }
+            for ( int k = 0; k <= 2*i; k++) {
                 System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+
+    public static void Pattern8(int a){
+        /* *******
+            *****
+             ***
+              *   */
+        for ( int i = 0; i < a; i++) {
+            for ( int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            for ( int k = 2*(a-i) - 1; k > 0; k--) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+
+    public static void Pattern9(int a){
+        /*    *
+             ***
+            *****
+           *******
+           *******
+            *****
+             ***
+              *   */
+        for ( int i = 0; i < a; i++) {
+            for ( int j = 0; j < a-i-1; j++) {
+                System.out.print(" ");
+            }
+            for ( int k = 0; k <= 2*i; k++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+        for ( int i = 0; i < a; i++) {
+            for ( int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            for ( int k = 2*(a-i) - 1; k > 0; k--) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+
+    public static void Pattern10(int a){
+        /*   *
+             **
+             ***
+             ****
+             ***
+             **
+             *  */
+          
+        for ( int i = 0; i < a; i++) {
+            for ( int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+        for ( int k = a; k > 0; k--) {
+            for ( int l = 0; l < k; l++) {
+            System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+
+    public static void Pattern11(int a){
+        /*   1
+             01
+             101
+             0101 */
+          
+        int b = 1;
+        for ( int i = 0; i < a; i++) {
+            for ( int j = 0; j <= i; j++) {
+                System.out.print(b);
+                int c = b-1;
+                b = Math.abs(c);
+            }
+            System.out.print("\n");
+        }
+    }
+
+        public static void Pattern11(int a){
+        /*   1       1
+             12     21
+             123   321
+             123443321 */
+          
+        int b = 1;
+        for ( int i = 0; i < a; i++) {
+            for ( int j = 0; j <= i; j++) {
+                System.out.print(b);
+                int c = b-1;
+                b = Math.abs(c);
             }
             System.out.print("\n");
         }
