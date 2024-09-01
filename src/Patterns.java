@@ -254,5 +254,39 @@ public class Patterns {
           System.out.print("\n");
       }
     }
+
+        public static void Pattern16(int a){
+        /*   A     
+             BB     
+             CCC   
+             DDDD */
+        
+        char b = 'A';
+        for ( int i = 0; i < a; i++) {
+            
+            for ( int j = 0; j <= i; j++){
+                System.out.print(b + " ");
+            }
+            System.out.print("\n");
+            b++;
+        }
+    }
+
+        public static void Pattern17(int a){
+        /*   A     
+             BB     
+             CCC   
+             DDDD */
+        
+        char b = 'A';
+        for ( int i = 0; i < a; i++) {
+            
+            for ( int j = 0; j <= i; j++){
+                System.out.print(b + " ");
+            }
+            System.out.print("\n");
+            b++;
+        }
+    }
 }
 
