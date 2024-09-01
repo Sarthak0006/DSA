@@ -238,5 +238,21 @@ public class Patterns {
             System.out.print("\n");
         }
     }
+
+        public static void Pattern15(int a){
+        /*   ABCD     
+             ABC     
+             AB   
+             A */
+        
+      for ( int i = a; i > 0; i--) {
+          char b = 'A';
+          for ( int j = 0; j < i; j++){
+              System.out.print(b + " ");
+              b++;
+          }
+          System.out.print("\n");
+      }
+    }
 }
 
