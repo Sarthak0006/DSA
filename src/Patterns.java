@@ -222,5 +222,21 @@ public class Patterns {
             System.out.print("\n");
         }
     }
+
+    public static void Pattern14(int a){
+        /*   A       
+             AB     
+             ABC   
+             ABCD */
+        
+        for ( int i = 0; i < a; i++) {
+            char b = 'A';
+            for ( int j = 0; j < i; j++){
+                System.out.print(b + " ");
+                b++;
+            }
+            System.out.print("\n");
+        }
+    }
 }
 
