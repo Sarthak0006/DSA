@@ -183,7 +183,7 @@ public class Patterns {
         }
     }
 
-        public static void Pattern11(int a){
+        public static void Pattern12(int a){
         /*   1       1
              12     21
              123   321
@@ -205,6 +205,22 @@ public class Patterns {
             }
           System.out.print("\n");
       }
+    }
+
+    public static void Pattern13(int a){
+        /*   1       
+             23     
+             456   
+             78910 */
+        
+      int b = 1;
+        for ( int i = 0; i < a; i++) {
+            for ( int j = 0; j < i; j++){
+                System.out.print(b + " ");
+                b = b+1;
+            }
+            System.out.print("\n");
+        }
     }
 }
 
