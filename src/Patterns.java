@@ -288,5 +288,28 @@ public class Patterns {
             b++;
         }
     }
+
+        public static void Pattern18(int a){
+        /*    A
+             ABA
+            ABCBA
+           ABCDBCA  */
+        for ( int i = 0; i < a; i++) {
+            for ( int j = 0; j < a-i-1; j++) {
+                System.out.print(" ");
+            }
+            char b = 'A';
+            for ( int k = 0; k < i){
+               System.out.print(b);
+               b++;
+            }
+            char d = b + I;
+            for ( int l = 0; l < i ) {
+               System.out.print(c);
+               c--;
+            }
+            System.out.print("\n");
+        }
+    }
 }
 
